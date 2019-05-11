@@ -1,11 +1,19 @@
 let mysql = require('mysql');
 
-let connection = mysql.createConnection({
+/*let connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'root',
   port     : '8889',
   database : 'test'
+});*/
+
+let connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'lvsh',
+  password : '#doctrine!',
+  port     : '3306',
+  database : 'lvsh_treg2019'
 });
 
 module.exports = {

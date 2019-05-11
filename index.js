@@ -6,11 +6,16 @@ var app = express();
 console.log(model);
 
 app.get('/', function (req, res) {
+  res.send('Läuft');
+});
+
+app.get('/listProgramm', function (req, res) {
   let test = model.getProgramm();
   test.then((data) => {
     res.send(data);
   });
 });
+
 
 app.post('/', function (req, res) {
   res.send('Got a POST request');

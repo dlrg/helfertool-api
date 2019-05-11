@@ -31,7 +31,7 @@ module.exports = {
   },
 
   getProgramm: function(){
-    return this.dbQuery('select * from prog_programmliste_detail');
+    return this.dbQuery('select * from prog_programmliste_detail where progr_list != 0');
   }
 
 };
